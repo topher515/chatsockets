@@ -30,7 +30,7 @@ socket.on('connection', function(client) {
 	}
 	
 	// new client
-	toclient('Server','You have connected to Chris\'s server')
+	toclient('Server','You have connected to the `ChatSockets`')
 	whoswho = [];
 	for (i in socket.clients) { 
 		if (who[i])
@@ -67,4 +67,4 @@ socket.on('connection', function(client) {
 	})
 });
 
-sys.puts('Server running...')
+sys.puts("Server running at 'localhost:8030'...")
