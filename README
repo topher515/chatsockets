@@ -1,5 +1,9 @@
-Just start the Node server with `node chat.js`. The default
-is to start the server at 'localhost:8030'.
+Start the Node server with `NODE_PATH=. node chat.js`. 
+
+The `NODE_PATH=.` shenanigans are so node looks in the current
+directory for the `socket.io` module.
+
+The default is for the server to start at 'localhost:8030'.
 
 Then open the `chat.html` in a webbrowser; the Javascript on 
 `chat.html` attempts to open connections to the `chat.js`
